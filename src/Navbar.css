@@ -1,0 +1,99 @@
+.navbar {
+    background-color: #212121;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.navbar a {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.navbar a:hover {
+    background-color: #fff;
+    color: #4169E1;
+    box-shadow: 0px 2px 0px 0px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar li:hover > .submenu li {
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.submenu li {
+    position: relative;
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        /* position: relative; */
+    }
+
+    .navbar .options {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        order: 1;
+        transition: all 0.5s ease-in;
+    }
+
+    .navbar .options.active {
+        display: flex;
+        transition: all 0.5s ease;
+    }
+
+    .navbar .options li {
+        border-top: 1px solid #fff;
+    }
+
+    .mobile {
+        display: flex;
+        padding: 6px;
+    }
+
+    .menu-icon {
+        font-size: 2rem;
+        fill: #fff;
+    }
+    
+    .submenu li {
+        display: flex;
+        flex-direction: column;
+        top: 0px;
+    }
+}

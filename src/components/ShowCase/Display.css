@@ -1,0 +1,31 @@
+.page {
+    width: 800px;
+    margin: auto;
+    height: 50px;
+    padding: 20px 0 20px 0;
+}
+
+.page .page-tool {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.page .page-tool li a {
+    margin: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.page .page-tool .selected a{
+    color: #4169E1;
+    box-shadow: 0px 2px 0px 0px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .page {
+        width: 100%;
+    }
+
+}

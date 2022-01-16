@@ -1,0 +1,7 @@
+.alert {
+    margin: 20px 0;
+}
+
+.alert.fail {
+    color: rgb(228, 40, 40);
+}

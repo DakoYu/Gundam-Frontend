@@ -1,0 +1,72 @@
+.email-update {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    background-color: #313131;
+}
+
+.email-update h1 {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.email-update form {
+    display: flex;
+    align-items: center;
+}
+
+.email-update input {
+    padding: 18px;
+    width: 500px;
+    outline: none;
+    font-size: 1.2rem;
+    margin-right: 30px;
+    border: none;
+    border-radius: 4px;
+}
+
+.email-update input:hover {
+    color: #4169E1;
+    box-shadow: 0 2px 0 0;
+}
+
+.email-update button {
+    outline: none;
+    padding: 0px 32px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    background-color: #4169E1;
+    color: #fff;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+    .email-update {
+        height: 100%;
+    }
+
+    .email-update h1 {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .email-update form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email-update form input {
+        width: 300px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .email-update form button {
+        margin: 20px 0;
+    }
+}

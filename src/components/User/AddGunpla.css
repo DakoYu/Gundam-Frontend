@@ -1,0 +1,44 @@
+.gunpla-form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gunpla-form input {
+    border: 2px solid #4169E1;
+    outline: none;
+    border-radius: 12px;
+    padding: 8px;
+    font-size: 1.1rem;
+    margin: 20px 0;
+}
+
+.gunpla-form .grade-select {
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #4169E1;
+    outline: none;
+    margin: 20px 0;
+}
+
+.gunpla-form textarea {
+    border: 2px solid #4169E1;
+    border-radius: 4px;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    outline: none;
+    resize: none;
+    padding: 5px;
+}
+
+.gunpla-form button {
+    padding: 12px;
+    background-color: #4169E1;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 20px 0;
+}

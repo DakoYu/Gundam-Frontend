@@ -1,0 +1,40 @@
+.model-info {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 50px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    margin: 20px 0;
+}
+
+.model-info .display {
+    margin-right: 50px;
+}
+
+
+.model-info .info h1 {
+    margin-bottom: 20px;
+}
+
+.model-info .info h3 {
+    margin: 20px 0;
+}
+
+.model-info .info p {
+    width: 80%;
+    line-height: 32px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .model-info {
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .model-info .display {
+        margin-right: 0px;
+    }
+    
+}
