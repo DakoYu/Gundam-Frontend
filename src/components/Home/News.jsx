@@ -17,7 +17,7 @@ const News = () => {
         try {
             const url = `${process.env.REACT_APP_API}newest`;
             const res = await axios.get(url);
-
+            console.log(url)
             const img = imageFormat(res.data.gunpla);
             setImages(img);
             setLoading(false);
